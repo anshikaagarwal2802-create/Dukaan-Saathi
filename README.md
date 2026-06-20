@@ -182,9 +182,9 @@ This builds the frontend into `dist/` and starts the Express server in productio
 
 ![khaata diary](khaatadiary.png)
 
-![settings page](setting1.png)
+![settings page](settings1.png)
 
-![settings page](setting2.png)
+![settings page](settings2.png)
 
 
 ## 📄 License
