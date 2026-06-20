@@ -174,18 +174,17 @@ This builds the frontend into `dist/` and starts the Express server in productio
 - AI Tips work out of the box even without a `GEMINI_API_KEY` (using built-in rule-based fallback tips per language).
 - The **"Translate to any language"** feature strictly requires a valid `GEMINI_API_KEY` — without it, this specific feature returns an error, while everything else in the app continues to work normally.
 
---- SCREENSHOTS :
-## Screenshot
+##SCREENSHOTS:
 
-![dashboard](screenshots/dashboard.png)
+![dashboard](dashboard.png)
 
-![inventory page](screenshots/inventory.png)
+![inventory page](inventory.png)
 
-![khaata diary](screenshots/khatadiary.png)
+![khaata diary](khaatadiary.png)
 
-![settings page](screenshots/setting1.png)
+![settings page](setting1.png)
 
-![settings page](screenshots/setting2.png)
+![settings page](setting2.png)
 
 
 ## 📄 License
