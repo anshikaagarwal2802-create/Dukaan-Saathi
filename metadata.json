@@ -1,0 +1,10 @@
+{
+  "name": "Dukaan Saathi",
+  "description": "Smart Business Assistant for Indian small shopkeepers. Calculate profits, P&L trends, udhaar reminders, barcode scan, and view smart AI-generated tips in local languages.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,38 +1,161 @@
-.App {
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
   text-align: center;
+  color: #2c3e50;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #34495e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 200px;
+  max-width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+.products-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  margin-bottom: 15px;
+  transition: flex-direction 0.3s ease;
+}
+
+.products-row input[type="text"] {
+  flex: 2;
+}
+
+.products-row input[type="number"] {
+  flex: 1;
+}
+
+button {
+  background-color: #27ae60;
   color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #219150;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.summary-container {
+  margin-top: 40px;
+}
+
+.summary-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.summary-card h4 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.summary-card p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #555;
+}
+
+.summary-card ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.summary-card ul li {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Responsive for devices smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 10px;
+    max-width: 100%;
+    margin: 15px auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .products-row {
+    flex-direction: column;
+  }
+
+  .products-row input[type="text"],
+  .products-row input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  h2, h3, h4, h5 {
+    text-align: center;
   }
 }
+/* Clear All button style */
+.clear-all-btn {
+  background-color: #e74c3c; /* red shade */
+  color: white;
+  margin-bottom: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: 100%; /* full width to match form width */
+}
+
+.clear-all-btn:hover {
+  background-color: #c0392b; /* darker red on hover */
+}
+
+/* Highlight invalid inputs with red border */
+/* Add this to your App.css */
+
+.input-error {
+  border: 2px solid red !important;
+  background-color: #ffe6e6;
+  transition: border-color 0.3s ease;
+} 
